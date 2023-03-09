@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: linear-gradient(to right,  rgb(73, 80, 83), rgb(169, 163, 228) ,  rgb(74, 141, 180));
+}
+
+.container {
+    height: 200vh;
+    width: 200vw;
+    display: grid;
+    place-items: center;
+
+}
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 30px;
+    border: 3px solid rgb(54, 171, 99);
+    border-radius: 10%;
+}
+
+#display {
+    margin: 1 0px;
+    height: 200px;
+    width: auto;
+    max-width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(84, 39, 39);
+    padding-right: 5%;
+    overflow-x: scroll;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(7, 7, 21);
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 6px;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    border: 0;
+    border-radius: 40px;
+    margin: 7px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 130px;
+}
+  .calculator.dark {
+    background: linear-gradient(to right,  rgb(77, 13, 132), rgb(24, 154, 69) ,  rgb(37, 98, 134));
+  }
+
+  .calculator.dark #display {
+    color: black;
+  }
+
+  .calculator.dark button#clear {
+    background-color: rgb(68, 125, 75);
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .calculator.dark button.btn-number {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 19%;
+    border: 2px solid blue;
+  }
+
+  .calculator.dark button.btn-operator {
+    background-color: #1b28d3;
+    color:black;
+    font-size: 50px;
+    border: 1px solid rgb(155, 155, 12);
+  }
+  
+  .calculator.dark button.btn-equal {
+    background-color: white;
+    color: rgb(145, 10, 10);
+    font-weight: bold;
+    font-size:40px;
+  }
+  .text-center{
+      text-align: center;
+  }
